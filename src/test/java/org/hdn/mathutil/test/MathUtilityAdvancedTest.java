@@ -25,20 +25,18 @@ public class MathUtilityAdvancedTest {
     // hàm trả về mảng 2 chiều, kiểu WRAPPER CLASS/OBJECT
     // mảng chứa các cặp n -> expected, ví dụ 0! -> 1; 1! -> 1; ...
     public static Object[][] initTestRightArgumentData() {
-        Object[][] testData =
+        return new Object[][]
                 {
                         {0, 1},
                         {1, 1},
                         {2, 2},
                         {5, 120},
-                        {6, 7200}
+                        {6, 720}
                 };
-        return testData;
     }
 
     public static Object[] initTestExpectionArgumentData() {
-        Object[] testData = {-1, -2, -3, 21, 22, 23};
-        return testData;
+        return new Object[] {-1, -2, -3, 21, 22, 23};
     }
 
     @ParameterizedTest

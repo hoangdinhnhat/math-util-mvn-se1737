@@ -5,10 +5,9 @@
 package org.hdn.mathutil.core;
 
 /**
- *
  * @author Lenovo
  */
-public class MathUtility{
+public class MathUtility {
 
     public static final double PI = 3.1415;
 
@@ -27,10 +26,7 @@ public class MathUtility{
             return 1;
         }
 
-        if (n >= 2) {
-            return getFactorial(n - 1) * n;
-        }
-        return 1;
+        return getFactorial(n - 1) * n;
     }
 
 }
